@@ -1,4 +1,60 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.navbar {
+  padding-top: 0px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.navbar span.info-logo {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 100px;
+}
+
+.navbar .navbar-brand {
+  padding: 0px;
+}
+
+.navbar .navbar-brand span {
+  position: absolute;
+}
+
+.navbar li a {
+  position: relative;
+  padding: 22px 35px !important;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: black !important;
+}
+
+.navbar li a:hover {
+  background: #ffb607;
+  color: white !important;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.navbar li a:hover::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: '';
+  width: 100%;
+  background: #cf8f09;
+  border: 2px solid #cf8f09;
+}
+
+@media (max-width: 991.8px) {
+  .navbar li a {
+    text-align: center;
+  }
+  .navbar ul {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
