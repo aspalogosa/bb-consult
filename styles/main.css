@@ -1,3 +1,14 @@
+main .bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main .bg h1 {
+  color: white;
+  text-align: center;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -14,6 +25,8 @@ body {
   top: 0px;
   left: 100px;
   width: 100px;
+  padding: 10px 0px;
+  line-height: 18px;
 }
 
 .navbar .navbar-brand {
@@ -47,6 +60,98 @@ body {
   width: 100%;
   background: #cf8f09;
   border: 2px solid #cf8f09;
+}
+
+main .bg {
+  position: relative;
+  height: 550px;
+}
+
+main .bg h1 {
+  padding-top: 190px;
+}
+
+main .bg h3 {
+  font-size: 20px;
+}
+
+main .bg h6 {
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+
+main .bg span {
+  font-size: 12px;
+}
+
+main .bg .section-items {
+  color: white;
+}
+
+main .bg .section-items .col-12 {
+  padding: 0px;
+  text-align: center;
+}
+
+main .bg .section-items .col-12 div {
+  padding-top: 35px;
+  padding-bottom: 40px;
+  height: 100%;
+}
+
+main .bg .section-items .item-box {
+  position: relative;
+}
+
+main .bg .section-items .item-box div.circle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 75px;
+  height: 75px;
+  background: white;
+  opacity: 0.5;
+  z-index: 1;
+  border-radius: 50%;
+  margin: auto;
+}
+
+main .bg .section-items .item-box i {
+  position: absolute;
+  top: 50px;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+
+main .bg div.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 100px;
+}
+
+main .bg div.contact a {
+  text-decoration: none;
+  background: #ffb405;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 0px 25px 25px 25px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .bg div.contact a:hover {
+  background: white;
+  color: black;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 @media (max-width: 991.8px) {

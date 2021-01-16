@@ -1,3 +1,26 @@
+// Variables
+$primary-color: black;
+$secondary-color:white;
+// Extends
+%background-primary {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+%mask {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+%heading-primary {
+    color: $secondary-color;
+    text-align: center;
+}
+
 // Selectors
 body {
     font-family: 'Open Sans', sans-serif;
@@ -13,6 +36,8 @@ body {
         top: 0px;
         left: 100px;
         width: 100px;
+        padding: 10px 0px;
+        line-height: 18px;
     }
     .navbar-brand {
         padding: 0px;
@@ -39,6 +64,83 @@ body {
                 width: 100%;
                 background: #cf8f09;
                 border: 2px solid #cf8f09;
+            }
+        }
+    }
+}
+
+main {
+    .bg {
+        position: relative;
+        @extend %background-primary;
+        height: 550px;
+        h1 {
+            @extend %heading-primary;
+            padding-top: 190px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h6 {
+            color: $secondary-color;
+            text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 30px;
+        }
+        span {
+            font-size: 12px;
+        }
+        .section-items {
+            color: white;
+            .col-12 {
+                padding: 0px;
+                text-align: center;
+                // display: baseline;
+                div {
+                    padding-top: 35px;
+                    padding-bottom: 40px;
+                    height: 100%;
+                }
+            }
+            .item-box {
+                position: relative;
+                div.circle {
+                    position: absolute;
+                    top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 75px;
+                    height: 75px;
+                    background: white;
+                    opacity: 0.5;
+                    z-index: 1;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+                i {
+                    position: absolute;
+                    top: 50px;
+                    padding-bottom: 20px;
+                    z-index: 2;
+                }
+            }
+        }
+        div.contact {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 100px;
+            a {
+                text-decoration: none;
+                background: #ffb405;
+                color: $secondary-color;
+                padding: 14px 20px;
+                border-radius: 0px 25px 25px 25px;
+                transition-duration: 0.5s;
+                &:hover {
+                    background: white;
+                    color: black;
+                    transition-duration: 0.5s;
+                }
             }
         }
     }
