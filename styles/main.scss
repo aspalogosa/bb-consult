@@ -73,6 +73,7 @@ main {
     .bg {
         position: relative;
         @extend %background-primary;
+        background-position: top center;
         height: 550px;
         h1 {
             @extend %heading-primary;
@@ -94,7 +95,7 @@ main {
             color: white;
             padding-bottom: 30px;
             .col-12 {
-                padding: 0px;
+                // padding: 0px;
                 text-align: center;
                 // div {
                 //     padding-top: 35px;

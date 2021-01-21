@@ -64,6 +64,7 @@ body {
 
 main .bg {
   position: relative;
+  background-position: top center;
   height: 550px;
 }
 
@@ -92,7 +93,6 @@ main .bg .section-items {
 }
 
 main .bg .section-items .col-12 {
-  padding: 0px;
   text-align: center;
 }
 
