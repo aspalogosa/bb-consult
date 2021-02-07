@@ -1,6 +1,6 @@
 // Variables
 $primary-color: black;
-$secondary-color:white;
+$secondary-color: white;
 // Extends
 %background-primary {
     background-repeat: no-repeat;
@@ -28,14 +28,14 @@ $secondary-color:white;
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    background-size: contain;
-    z-index: 10;
+    background-size: cover;
+    // z-index: 10;
     background-repeat: no-repeat;
 }
 
 // Selectors
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .navbar {
@@ -58,24 +58,27 @@ body {
     li {
         a {
             position: relative;
-            padding: 22px 35px!important;
+            padding: 22px 35px !important;
             transition-duration: 0.3s;
-            color: black!important;
+            color: black !important;
             &:hover {
                 background: #ffb607;
-                color: white!important;
+                color: white !important;
                 transition-duration: 0.3s;
             }
             &:hover::before {
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                content: '';
+                content: "";
                 width: 100%;
                 background: #cf8f09;
                 border: 2px solid #cf8f09;
             }
         }
+    }
+    a.blog {
+        background: #ffb405 !important;
     }
 }
 
@@ -87,31 +90,36 @@ main {
         height: 450px;
         h1 {
             @extend %heading-primary;
-            padding-top: 90px;
+            padding-top: 80px;
+            color: white;
+            text-shadow: 3px 3px 7px black;
         }
         h3 {
+            // padding-top: 100px;
             font-size: 20px;
         }
         h6 {
             color: $secondary-color;
             text-align: center;
             margin-bottom: 0px;
-            padding-bottom: 30px;
+            padding-bottom: 0px;
+            text-shadow: 3px 3px 7px black;
         }
         span {
             font-size: 12px;
         }
         .section-items {
             color: white;
-            padding-bottom: 30px;
+            // padding-bottom: 40px;
             .col-12 {
                 text-align: center;
             }
             .item-box {
                 position: relative;
-                padding-bottom: 30px!important;
+                padding: 30px 10px !important;
                 height: 300px;
                 box-shadow: 5px 5px 10px black;
+                cursor: pointer;
                 h3 {
                     position: absolute;
                     top: 110px;
@@ -125,12 +133,14 @@ main {
                     transform: translateX(-50%);
                 }
                 .overlay-item {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
                     position: absolute;
-                    top: 102px;
+                    // width: 100%;
+                    // height: 66%;
+                    bottom: 0px;
                     left: 0px;
-                    width: 100%;
-                    height: 66%;
+                    right: 0px;
+                    top: 103px;
                 }
                 .item-icon {
                     @extend %item-icons;
@@ -141,7 +151,7 @@ main {
             display: flex;
             justify-content: center;
             padding-top: 10px;
-            padding-bottom: 91px;
+            padding-bottom: 130px;
             a {
                 text-decoration: none;
                 background: #ffb405;
@@ -157,11 +167,19 @@ main {
             }
         }
     }
+    .test {}
 }
 
 // Querries
+// LG
+@media (max-width: 1199.98px) {
+    .item-box {
+        margin-bottom: 20px;
+    }
+}
+
 // MD
-@media (max-width: 991.8px) {
+@media (max-width: 991.98px) {
     .navbar {
         li {
             a {
@@ -171,5 +189,28 @@ main {
         ul {
             margin-top: 20px;
         }
+    }
+    .section-items {
+        margin-top: -20px !important;
+    }
+}
+
+// SM
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+    .contact {
+        padding-bottom: 155px !important;
+    }
+}
+
+// XS
+@media (max-width: 575.98px) {
+    .contact {
+        padding-bottom: 155px !important;
     }
 }
