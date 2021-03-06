@@ -14,6 +14,12 @@ body {
   size: 32px !important;
 }
 
+.info-logo {
+  color: #023e8a;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 .navbar {
   padding: 10px 16px;
   position: relative;
@@ -185,10 +191,6 @@ main .bg div.contact a:hover {
   .contact {
     padding-bottom: 155px !important;
   }
-}
-.fff {
-  background: red;
-  font-size: 36px;
 }
 
 /*# sourceMappingURL=main.css.map */
