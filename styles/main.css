@@ -4,7 +4,7 @@ main .bg {
   background-size: cover;
 }
 
-main .bg h1 {
+main .bg .main-heading {
   color: white;
   text-align: center;
 }
@@ -75,10 +75,11 @@ main .bg {
   background-position: top center;
   height: 450px;
 }
-main .bg h1 {
-  padding-top: 80px;
+main .bg .main-heading {
+  padding-top: 60px;
   color: white;
   text-shadow: 3px 3px 7px black;
+  font-size: 40px;
 }
 main .bg h3 {
   font-size: 20px;
@@ -141,13 +142,13 @@ main .bg .section-items .col-12 {
 main .bg .section-items .item-box {
   position: relative;
 }
-main .bg div.contact {
+main .bg .contact {
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  padding-bottom: 130px;
+  padding-bottom: 132px;
 }
-main .bg div.contact a {
+main .bg .contact a {
   text-decoration: none;
   background: #ffb405;
   color: white;
@@ -156,27 +157,46 @@ main .bg div.contact a {
   border-radius: 0 25px 25px 25px;
   transition-duration: 0.5s;
 }
-main .bg div.contact a:hover {
+main .bg .contact a:hover {
   background: white;
   color: black;
   transition-duration: 0.5s;
 }
+
+.footer-box {
+  width: 100%;
+  height: 200px;
+  background: #023e8a;
+}
+
 @media (max-width: 1199.98px) {
   .item-box {
     margin-bottom: 20px;
   }
+
+  .hover-scale:hover {
+    transform: scale(1.05) !important;
+  }
 }
 @media (max-width: 991.98px) {
+  .contact {
+    padding-bottom: 139px !important;
+  }
+
   .navbar li a {
     text-align: center;
   }
   .navbar ul {
     margin-top: 20px;
   }
+
+  .main-heading {
+    font-size: 34px !important;
+  }
 }
 @media (max-width: 767.98px) {
-  h1 {
-    font-size: 24px;
+  .main-heading {
+    word-spacing: 5px !important;
   }
 
   h6 {
@@ -184,12 +204,7 @@ main .bg div.contact a:hover {
   }
 
   .contact {
-    padding-bottom: 155px !important;
-  }
-}
-@media (max-width: 575.98px) {
-  .contact {
-    padding-bottom: 155px !important;
+    padding-bottom: 103px !important;
   }
 }
 
