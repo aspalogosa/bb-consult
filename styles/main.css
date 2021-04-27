@@ -24,6 +24,7 @@ body {
   padding: 10px 16px;
   position: relative;
 }
+
 .navbar span.navbar {
   position: absolute;
   top: 20px;
@@ -32,26 +33,34 @@ body {
   padding: 10px 0;
   line-height: 18px;
 }
+
 .navbar .navbar-brand {
   padding: 0;
 }
+
 .navbar .navbar-brand span {
   position: absolute;
 }
+
 .navbar li a {
   position: relative;
   padding: 22px 35px !important;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   color: white !important;
   font-weight: 700;
   background: #ffb607;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
+
 .navbar li a:hover {
   background: white;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: black !important;
 }
+
 .navbar li a:hover::before {
   position: absolute;
   top: 1px;
@@ -61,6 +70,7 @@ body {
   background: #cf8f09;
   border: 2px solid #cf8f09;
 }
+
 .navbar li a:hover::after {
   position: absolute;
   bottom: -1px;
@@ -71,19 +81,21 @@ body {
 }
 
 main .bg {
-  position: relative;
   background-position: top center;
   height: 450px;
 }
+
 main .bg .main-heading {
   padding-top: 60px;
   color: white;
   text-shadow: 3px 3px 7px black;
   font-size: 40px;
 }
+
 main .bg h3 {
   font-size: 20px;
 }
+
 main .bg h6 {
   color: white;
   text-align: center;
@@ -91,25 +103,31 @@ main .bg h6 {
   padding-bottom: 0;
   text-shadow: 3px 3px 7px black;
 }
+
 main .bg span {
   font-size: 20px;
 }
+
 main .bg .section-items {
   color: white;
 }
+
 main .bg .section-items a {
   z-index: 10;
 }
+
 main .bg .section-items .anchor-box {
   position: relative;
   height: 102px;
 }
+
 main .bg .section-items .icon-box {
   position: absolute;
   top: 25px;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
   width: 50px;
   height: 50px;
@@ -117,6 +135,7 @@ main .bg .section-items .icon-box {
   background-size: cover;
   background-position: center center;
 }
+
 main .bg .section-items a.main-links {
   position: absolute;
   top: 0;
@@ -124,30 +143,45 @@ main .bg .section-items a.main-links {
   bottom: 0;
   left: 0;
 }
+
 main .bg .section-items .hover-scale {
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
+
 main .bg .section-items .hover-scale:hover {
-  transform: scale(1.1);
-  transition-duration: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
+
 main .bg .section-items .text-box {
   position: relative;
   padding: 70px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important;
 }
+
 main .bg .section-items .col-12 {
   text-align: center;
 }
+
 main .bg .section-items .item-box {
   position: relative;
 }
+
 main .bg .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 132px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 131px;
 }
+
 main .bg .contact a {
   text-decoration: none;
   background: #ffb405;
@@ -155,57 +189,88 @@ main .bg .contact a {
   font-weight: 700;
   padding: 14px 20px;
   border-radius: 0 25px 25px 25px;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
+
 main .bg .contact a:hover {
   background: white;
   color: black;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.contacts {
+  color: white;
+  padding: 30px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: white;
+}
+
+.contacts a:hover {
+  color: grey;
+}
+
+.facebook-icon i:hover {
+  color: grey !important;
 }
 
 .footer-box {
   width: 100%;
-  height: 200px;
+  height: auto;
   background: #023e8a;
+  margin-top: 230px;
 }
 
 @media (max-width: 1199.98px) {
   .item-box {
     margin-bottom: 20px;
   }
-
   .hover-scale:hover {
-    transform: scale(1.05) !important;
+    -webkit-transform: scale(1.05) !important;
+            transform: scale(1.05) !important;
+  }
+  .footer-box {
+    margin-top: 550px;
   }
 }
+
 @media (max-width: 991.98px) {
   .contact {
-    padding-bottom: 139px !important;
+    padding-bottom: 138px !important;
   }
-
+  .contacts {
+    text-align: center;
+  }
   .navbar li a {
     text-align: center;
   }
   .navbar ul {
     margin-top: 20px;
   }
-
   .main-heading {
     font-size: 34px !important;
   }
+  .footer-box {
+    margin-top: 860px;
+  }
 }
+
 @media (max-width: 767.98px) {
   .main-heading {
     word-spacing: 5px !important;
   }
-
   h6 {
     font-size: 14px;
   }
-
   .contact {
-    padding-bottom: 103px !important;
+    padding-bottom: 100px !important;
+  }
+  .footer-box {
+    margin-top: 1800px;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
