@@ -158,9 +158,13 @@ main .bg .section-items .hover-scale:hover {
 
 main .bg .section-items .text-box {
   position: relative;
-  padding: 70px 0;
+  padding: 10px 0px 10px 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) !important;
+}
+
+main .bg .section-items .text-box h3 {
+  margin-bottom: 0px;
 }
 
 main .bg .section-items .col-12 {
@@ -200,6 +204,14 @@ main .bg .contact a:hover {
           transition-duration: 0.5s;
 }
 
+main .summary h6 {
+  padding-top: 10px;
+  color: red;
+  text-shadow: 1px 1px 3px grey;
+  font-weight: bold;
+  text-align: left;
+}
+
 .contacts {
   color: white;
   padding: 30px;
@@ -234,7 +246,7 @@ main .bg .contact a:hover {
             transform: scale(1.05) !important;
   }
   .footer-box {
-    margin-top: 550px;
+    margin-top: 450px;
   }
 }
 
@@ -255,7 +267,7 @@ main .bg .contact a:hover {
     font-size: 34px !important;
   }
   .footer-box {
-    margin-top: 860px;
+    margin-top: 660px;
   }
 }
 
@@ -270,7 +282,13 @@ main .bg .contact a:hover {
     padding-bottom: 100px !important;
   }
   .footer-box {
-    margin-top: 1800px;
+    margin-top: 1200px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-box {
+    margin-top: 1250px;
   }
 }
 /*# sourceMappingURL=main.css.map */
