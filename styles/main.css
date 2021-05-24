@@ -4,6 +4,13 @@ main .bg {
   background-size: cover;
 }
 
+main .bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 2px;
+}
+
 main .bg .main-heading {
   color: white;
   text-align: center;
@@ -209,7 +216,26 @@ main .summary h6 {
   color: red;
   text-shadow: 1px 1px 3px grey;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+}
+
+main .contact-box {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 50px;
+}
+
+main .card-text {
+  margin-bottom: 0px;
+}
+
+main .text-indentation {
+  display: inline-block;
+  text-indent: 30px !important;
+}
+
+main h3 {
+  font-weight: 700;
 }
 
 .contacts {
@@ -237,6 +263,10 @@ main .summary h6 {
   margin-top: 230px;
 }
 
+.footer-start {
+  margin-top: 82px;
+}
+
 @media (max-width: 1199.98px) {
   .item-box {
     margin-bottom: 20px;
@@ -247,6 +277,9 @@ main .summary h6 {
   }
   .footer-box {
     margin-top: 450px;
+  }
+  .footer-start {
+    margin-top: 105px;
   }
 }
 
@@ -269,6 +302,12 @@ main .summary h6 {
   .footer-box {
     margin-top: 660px;
   }
+  .item-heading {
+    display: inline-block;
+  }
+  .footer-start {
+    margin-top: 82px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -284,11 +323,21 @@ main .summary h6 {
   .footer-box {
     margin-top: 1200px;
   }
+  .footer-start {
+    margin-top: 82px;
+  }
 }
 
 @media (max-width: 575.98px) {
   .footer-box {
     margin-top: 1250px;
+  }
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-start {
+    margin-top: 82px;
   }
 }
 /*# sourceMappingURL=main.css.map */
